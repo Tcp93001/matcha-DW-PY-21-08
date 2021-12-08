@@ -41,6 +41,7 @@ button {
 
 .header ul {
     padding: 0;
+    color: red;
 }
 
 .header > * {
