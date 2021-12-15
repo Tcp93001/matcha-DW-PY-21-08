@@ -158,5 +158,73 @@ button {
     height: 55px;
 }
 
+.features {
+    background-color: #025157;
+    height: 660px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    padding: 5% 10%;
+    /* gap: 30px; esta propiedad también se puede usar*/
+    /* quitar despues de la clase */
+    margin-bottom: 150px;
+}
 
+.feature-card {
+    /* esta propiedad no se necesita si usamos gap en el contenedor*/
+    margin: 0 15px 30px;
+    border-radius: 5px;
+    background: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
 
+.feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+
+.feature-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+
+.feature-content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+.feature-content a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.feature-content-image {
+    margin: 0;
+}
+
+.feature-content-image img {
+    height: 40px;
+}
+
+.feature-image {
+    position: relative;
+    flex: 1;
+}
+
+.feature-image img {
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    transition: left 0.5s;
+}
+
+.feature-image img:hover {
+    left: 0;
+}
